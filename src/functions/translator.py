@@ -43,7 +43,6 @@ class RDFTranslator:
         return self.g
 
     def capitalizenames(self, language):
-        g2 = Graph()
         names = self.fetchcapitalizednames(language)
 
         for subj, pred, obj in self.g.triples((None, SKOS.prefLabel, None)):
@@ -64,6 +63,16 @@ class RDFTranslator:
             print(" ------------------------------------------------------------------------- ")
 
         return self.g
+
+    def cherrypicktriples(self, retained):
+        for subj, pred, obj in self.g.triples((None, None, None)):
+            print(" ------------------------------------------------------------------------- ")
+            print(subj)
+            print(pred)
+            print(obj)
+
+        return self.g
+
 
     def fetchcapitalizednames(self, language):
         names = {}
