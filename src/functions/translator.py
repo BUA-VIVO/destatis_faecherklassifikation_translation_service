@@ -11,6 +11,8 @@ class RDFTranslator:
 
     def __init__(self, inputfile, source, destination):
         self.g = Graph().parse(inputfile)
+        self.g.bind("skos", SKOS)
+        self.g.bind("rdfs", RDFS)
         self.translator = Translator()
         self.source = source
         self.destination = destination
@@ -65,13 +67,40 @@ class RDFTranslator:
         return self.g
 
     def cherrypicktriples(self, retained):
-        for subj, pred, obj in self.g.triples((None, None, None)):
-            print(" ------------------------------------------------------------------------- ")
-            print(subj)
-            print(pred)
-            print(obj)
+        g2 = Graph()
+        g2.bind("skos", SKOS)
+        g2.bind("rdfs", RDFS)
+        for subj, pred, obj in self.g.triples((None, SKOS.prefLabel, None)):
+            if (subj, pred, obj) not in self.g:
+                raise Exception("It better be!")
+            if "/" in subj:
+                subjectbase = subj[0:subj.rindex("/")]
+                if subjectbase in retained:
 
-        return self.g
+                    if pred.strip() in retained and retained[pred.strip()] == obj.language:
+                        g2.add((subj, SKOS.prefLabel, obj))
+
+        for subj, pred, obj in self.g.triples((None, RDFS.label, None)):
+            if (subj, pred, obj) not in self.g:
+                raise Exception("It better be!")
+            if "/" in subj:
+                subjectbase = subj[0:subj.rindex("/")]
+                if subjectbase in retained:
+                    print(subj)
+                    if pred.strip() in retained and obj.language in retained[pred.strip()]:
+                        print(pred)
+                        print(obj)
+                        print(obj.language)
+                        g2.add((subj, pred, obj))
+            # print(" ------------------------------------------------------------------------- ")
+            # if "/" in subj:
+            #     subjectbase = subj[0:subj.rindex("/")]
+            #     if subjectbase in retained:
+            #         print("SUBJBASE: " + subjectbase)
+            #         print(pred)
+            #         print(obj.value())
+
+        return g2
 
 
     def fetchcapitalizednames(self, language):
