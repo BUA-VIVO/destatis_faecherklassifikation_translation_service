@@ -1,7 +1,19 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@base <https://onto.tib.eu/destf/cs/> .
+
+
+
+<https://onto.tib.eu/destf/cs/> rdf:type owl:Ontology ;
+               owl:versionIRI <https://onto.tib.eu/destf/cs/1.0> ;
+               vitro:ontologyPrefixAnnot "faecherklassifikation"^^xsd:string ;
+               rdfs:label "DESTATIS - Personal an Hochschulen - FächersystematikOntologie"@de-de ,
+                          "DESTATIS - Personnel At Universities - Subject Classification Ontology"@en-us .
+
 
 skos:broader a owl:AnnotationProperty .
 
@@ -818,14 +830,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/1125> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftsenglisch, Englische Fachsprachen"@de,
-        "Business English And Specialised English"@en ;
+        "Business English And English technical language"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/110> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/110> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1125"^^xsd:string ;
     skos:prefLabel "Wirtschaftsenglisch, Englische Fachsprachen"@de,
-        "Business English And Specialised English"@en .
+        "Business English And English technical language"@en .
 
 <https://onto.tib.eu/destf/cs/1200> a owl:NamedIndividual,
         skos:Concept ;
@@ -844,74 +856,74 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/1210> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Französische Sprach- und Literaturwissenschaft"@de,
-        "French Language And Literature"@en ;
+        "French Linguistics and Literary studies"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/120> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/120> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1210"^^xsd:string ;
     skos:prefLabel "Französische Sprach- und Literaturwissenschaft"@de,
-        "French Language And Literature"@en .
+        "French Linguistics and Literary studies"@en .
 
 <https://onto.tib.eu/destf/cs/1215> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Didaktik des Französischen"@de,
-        "Didactics Of French"@en ;
+        "Didactics of the French Language"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/120> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/120> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1215"^^xsd:string ;
     skos:prefLabel "Didaktik des Französischen"@de,
-        "Didactics Of French"@en .
+        "Didactics of the French Language"@en .
 
 <https://onto.tib.eu/destf/cs/1220> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Italienische Sprach- und Literaturwissenschaft"@de,
-        "Italian Linguistics And Literature"@en ;
+        "Italian Linguistics And Literary Studies "@en ;
     skos:broader <https://onto.tib.eu/destf/cs/120> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/120> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1220"^^xsd:string ;
     skos:prefLabel "Italienische Sprach- und Literaturwissenschaft"@de,
-        "Italian Linguistics And Literature"@en .
+        "Italian Linguistics And Literary Studies "@en .
 
 <https://onto.tib.eu/destf/cs/1225> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Didaktik des Italienischen"@de,
-        "Didactics Of Italian"@en ;
+        "Didactics Of the Italian language"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/120> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/120> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1225"^^xsd:string ;
     skos:prefLabel "Didaktik des Italienischen"@de,
-        "Didactics Of Italian"@en .
+        "Didactics Of the Italian language"@en .
 
 <https://onto.tib.eu/destf/cs/1230> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Iberoromanische Sprach- und Literaturwissenschaft"@de,
-        "Ibero-romance Linguistics And Literature"@en ;
+        "Ibero-romance Linguistics And Literary Studies"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/120> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/120> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1230"^^xsd:string ;
     skos:prefLabel "Iberoromanische Sprach- und Literaturwissenschaft"@de,
-        "Ibero-romance Linguistics And Literature"@en .
+        "Ibero-romance Linguistics And Literary Studies"@en .
 
 <https://onto.tib.eu/destf/cs/1235> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Didaktik des Spanischen"@de,
-        "Didactics Of Spanish"@en ;
+        "Didactics Of the Spanish Language"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/120> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/120> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1235"^^xsd:string ;
     skos:prefLabel "Didaktik des Spanischen"@de,
-        "Didactics Of Spanish"@en .
+        "Didactics Of the Spanish Language"@en .
 
 <https://onto.tib.eu/destf/cs/1240> a owl:NamedIndividual,
         skos:Concept ;
@@ -1112,14 +1124,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/1430> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Altorientalistik"@de,
-        "Ancient Near Eastern Studies"@en ;
+        "Ancient Oriental Studies"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/140> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/140> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1430"^^xsd:string ;
     skos:prefLabel "Altorientalistik"@de,
-        "Ancient Near Eastern Studies"@en .
+        "Ancient Oriental Studies"@en .
 
 <https://onto.tib.eu/destf/cs/1440> a owl:NamedIndividual,
         skos:Concept ;
@@ -1184,14 +1196,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/1470> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Islamwissenschaft"@de,
-        "Islamic Studies"@en ;
+        "Islamology"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/140> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/01>,
         <https://onto.tib.eu/destf/cs/140> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1470"^^xsd:string ;
     skos:prefLabel "Islamwissenschaft"@de,
-        "Islamic Studies"@en .
+        "Islamology"@en .
 
 <https://onto.tib.eu/destf/cs/1480> a owl:NamedIndividual,
         skos:Concept ;
@@ -1430,14 +1442,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/1715> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Arbeits-, Organisations- und Wirtschaftspsychologie"@de,
-        "Industrial, Organizational And Business Psychology"@en ;
+        "Work, Organizational And Business Psychology"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/315> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/315> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1715"^^xsd:string ;
     skos:prefLabel "Arbeits-, Organisations- und Wirtschaftspsychologie"@de,
-        "Industrial, Organizational And Business Psychology"@en .
+        "Work, Organizational And Business Psychology"@en .
 
 <https://onto.tib.eu/destf/cs/1720> a owl:NamedIndividual,
         skos:Concept ;
@@ -1576,14 +1588,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/1805> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Berufs- und Wirtschaftspädagogik"@de,
-        "Vocational And Business Education"@en ;
+        "Vocational And Business Pedagogy"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/320> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/320> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1805"^^xsd:string ;
     skos:prefLabel "Berufs- und Wirtschaftspädagogik"@de,
-        "Vocational And Business Education"@en .
+        "Vocational And Business Pedagogy"@en .
 
 <https://onto.tib.eu/destf/cs/1806> a owl:NamedIndividual,
         skos:Concept ;
@@ -1650,26 +1662,26 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/1828> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Kultur- und Medienpädagogik"@de,
-        "Culture And Media Education"@en ;
+        "Culture And Media Pedagogy"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/320> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/320> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1828"^^xsd:string ;
     skos:prefLabel "Kultur- und Medienpädagogik"@de,
-        "Culture And Media Education"@en .
+        "Culture And Media Pedagogy"@en .
 
 <https://onto.tib.eu/destf/cs/1829> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Interkulturelle und International Vergleichende Erziehungswissenschaft"@de,
-        "Intercultural And International Comparative Education"@en ;
+        "Intercultural And International Comparative Educational Science"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/320> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/320> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "1829"^^xsd:string ;
     skos:prefLabel "Interkulturelle und International Vergleichende Erziehungswissenschaft"@de,
-        "Intercultural And International Comparative Education"@en .
+        "Intercultural And International Comparative Educational Science"@en .
 
 <https://onto.tib.eu/destf/cs/1950> a owl:NamedIndividual,
         skos:Concept ;
@@ -2074,14 +2086,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/2520> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Rechts- und Staatsphilosophie"@de,
-        "Philosophy Of Law And Government"@en ;
+        "Philosophy Of Law And the State"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/250> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/250> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "2520"^^xsd:string ;
     skos:prefLabel "Rechts- und Staatsphilosophie"@de,
-        "Philosophy Of Law And Government"@en .
+        "Philosophy Of Law And the State"@en .
 
 <https://onto.tib.eu/destf/cs/2530> a owl:NamedIndividual,
         skos:Concept ;
@@ -2218,14 +2230,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/2640> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftsrecht"@de,
-        "Economic/Business Law"@en ;
+        "Commercial Law"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/250> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/250> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "2640"^^xsd:string ;
     skos:prefLabel "Wirtschaftsrecht"@de,
-        "Economic/Business Law"@en .
+        "Comnmercial Law"@en .
 
 <https://onto.tib.eu/destf/cs/2650> a owl:NamedIndividual,
         skos:Concept ;
@@ -2290,7 +2302,7 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/2700> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Verwaltungswissenschaft allgemein"@de,
-        "Public Administration (General)"@en ;
+        "Public administration theory (General)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/270> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/270> ;
@@ -2299,7 +2311,7 @@ skos:ConceptScheme a owl:Class .
     skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de,
         "Teaching and research areas that can only be assigned to a teaching and research area but not to a subject area must be documented here."@en ;
     skos:prefLabel "Verwaltungswissenschaft allgemein"@de,
-        "Public Administration (General)"@en .
+        "Public administration theory (General)"@en .
 
 <https://onto.tib.eu/destf/cs/2710> a owl:NamedIndividual,
         skos:Concept ;
@@ -2376,14 +2388,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/2750> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Bundeswehrverwaltung"@de,
-        "Federal Armed Forces Administration"@en ;
+        "Federal Defense Administration"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/270> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/270> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "2750"^^xsd:string ;
     skos:prefLabel "Bundeswehrverwaltung"@de,
-        "Federal Armed Forces Administration"@en .
+        "Federal Defense Administration"@en .
 
 <https://onto.tib.eu/destf/cs/2760> a owl:NamedIndividual,
         skos:Concept ;
@@ -2508,7 +2520,7 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/2900> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftswissenschaften allgemein"@de,
-        "Economics And Business (general)"@en ;
+        "Economic Sciences (general)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/290> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/290> ;
@@ -2517,7 +2529,7 @@ skos:ConceptScheme a owl:Class .
     skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de,
         "Teaching and research areas that can only be assigned to a teaching and research area but not to a subject area must be documented here."@en ;
     skos:prefLabel "Wirtschaftswissenschaften allgemein"@de,
-        "Economics And Business (general)"@en .
+        "Economic Sciences (general)"@en .
 
 <https://onto.tib.eu/destf/cs/2905> a owl:NamedIndividual,
         skos:Concept ;
@@ -2558,14 +2570,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/2920> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftsinformatik (f. Wirtschaftsingenieure)"@de,
-        "Business Informatics (for Industrial Engineers)"@en ;
+        "Business Informatics (for Business Engineers)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/290> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/290> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "2920"^^xsd:string ;
     skos:prefLabel "Wirtschaftsinformatik (f. Wirtschaftsingenieure)"@de,
-        "Business Informatics (for Industrial Engineers)"@en .
+        "Business Informatics (for Business Engineers)"@en .
 
 <https://onto.tib.eu/destf/cs/2925> a owl:NamedIndividual,
         skos:Concept ;
@@ -2726,14 +2738,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/3100> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftsingenieurwesen mit wirtschaftswissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Economics Focus)"@en ;
+        "Business Engineering (Economics Focus)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/310> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03>,
         <https://onto.tib.eu/destf/cs/310> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "3100"^^xsd:string ;
     skos:prefLabel "Wirtschaftsingenieurwesen mit wirtschaftswissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Economics Focus)"@en .
+        "Business Engineering (Economics Focus)"@en .
 
 <https://onto.tib.eu/destf/cs/3110> a owl:NamedIndividual,
         skos:Concept ;
@@ -4204,14 +4216,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/4775> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Sexualmedizin"@de,
-        "Sex Medicine"@en ;
+        "Sexual Medicine"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/470> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/05>,
         <https://onto.tib.eu/destf/cs/470> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "4775"^^xsd:string ;
     skos:prefLabel "Sexualmedizin"@de,
-        "Sex Medicine"@en .
+        "Sexual Medicine"@en .
 
 <https://onto.tib.eu/destf/cs/4776> a owl:NamedIndividual,
         skos:Concept ;
@@ -4276,7 +4288,7 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/4900> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Klin.-Prakt. Humanmedizin allgemein"@de,
-        "Clinical Practice Human Medicine (general)"@en ;
+        "Clinical Practical Human Medicine (general)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/490> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/05>,
         <https://onto.tib.eu/destf/cs/490> ;
@@ -4285,7 +4297,7 @@ skos:ConceptScheme a owl:Class .
     skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de,
         "Teaching and research areas that can only be assigned to a teaching and research area but not to a subject area must be documented here."@en ;
     skos:prefLabel "Klin.-Prakt. Humanmedizin allgemein"@de,
-        "Clinical Practice Human Medicine (general)"@en .
+        "Clinical Practical Human Medicine (general)"@en .
 
 <https://onto.tib.eu/destf/cs/4910> a owl:NamedIndividual,
         skos:Concept ;
@@ -5330,7 +5342,7 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/6500> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Ernährungs- und Haushaltswissenschaften allgemein"@de,
-        "Nutritional And Household Sciences (general)"@en ;
+        "Nutritional And Domestic Science (general)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/650> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/07>,
         <https://onto.tib.eu/destf/cs/650> ;
@@ -5339,7 +5351,7 @@ skos:ConceptScheme a owl:Class .
     skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de,
         "Teaching and research areas that can only be assigned to a teaching and research area but not to a subject area must be documented here."@en ;
     skos:prefLabel "Ernährungs- und Haushaltswissenschaften allgemein"@de,
-        "Nutritional And Household Sciences (general)"@en .
+        "Nutritional And Domestic Science (general)"@en .
 
 <https://onto.tib.eu/destf/cs/6510> a owl:NamedIndividual,
         skos:Concept ;
@@ -5382,30 +5394,30 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/6710> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Polytechnik/Arbeitslehre"@de,
-        "Crafts Education / Ergonomics"@en ;
+        "Polytechnics / Ergonomics"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/670> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
         <https://onto.tib.eu/destf/cs/670> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "6710"^^xsd:string ;
     skos:prefLabel "Polytechnik/Arbeitslehre"@de,
-        "Crafts Education / Ergonomics"@en .
+        "Polytechnics / Ergonomics"@en .
 
 <https://onto.tib.eu/destf/cs/6720> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Techn. Gesundheitswesen"@de,
-        "Public Health Engineering"@en ;
+        "Technical Public Health"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/670> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
         <https://onto.tib.eu/destf/cs/670> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "6720"^^xsd:string ;
     skos:prefLabel "Techn. Gesundheitswesen"@de,
-        "Public Health Engineering"@en .
+        "Technical Public Health"@en .
 
 <https://onto.tib.eu/destf/cs/6740> a owl:NamedIndividual,
         skos:Concept ;
-    rdfs:label "Interdisciplinary Studies (Engineering Focus, excl. Mechatronics)"@de,
+    rdfs:label "Interdisziplinäre Studien (Schwerpunkt Ingenieurwesen - ohne Mechatronik)"@de,
         "Interdisciplinary Studies (Engineering Focus, Excl. Mechatronics)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/670> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
@@ -5414,7 +5426,7 @@ skos:ConceptScheme a owl:Class .
     skos:notation "6740"^^xsd:string ;
     skos:note "Interdisziplinäre Lehr- und Forschungsgebiete, die mehrere Lehr- und Forschungsbereiche einer Fächergruppe betreffen und nicht schwerpunktmäßig zugeordnet werden können, sind hier nachzuweisen."@de,
         "Interdisciplinary teaching and research areas that affect several teaching and research areas of a subject group and cannot be assigned as a priority must be proven here."@en ;
-    skos:prefLabel "Interdisciplinary Studies (Engineering Focus, excl. Mechatronics)"@de,
+    skos:prefLabel "Interdisziplinäre Studien (Schwerpunkt Ingenieurwesen - ohne Mechatronik)"@de,
         "Interdisciplinary Studies (Engineering Focus, Excl. Mechatronics)"@en .
 
 <https://onto.tib.eu/destf/cs/6750> a owl:NamedIndividual,
@@ -5432,14 +5444,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/6755> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Engineering Focus)"@en ;
+        "Business Engineering (Engineering Focus)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/675> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
         <https://onto.tib.eu/destf/cs/675> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "6755"^^xsd:string ;
     skos:prefLabel "Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Engineering Focus)"@en .
+        "Business Engineering (Engineering Focus)"@en .
 
 <https://onto.tib.eu/destf/cs/6760> a owl:NamedIndividual,
         skos:Concept ;
@@ -5918,14 +5930,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/7120> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Elektrische Energietechnik"@de,
-        "Electrical Power Engineering"@en ;
+        "Power Systems Engineering"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/710> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
         <https://onto.tib.eu/destf/cs/710> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "7120"^^xsd:string ;
     skos:prefLabel "Elektrische Energietechnik"@de,
-        "Electrical Power Engineering"@en .
+        "Power Systems Engineering"@en .
 
 <https://onto.tib.eu/destf/cs/7125> a owl:NamedIndividual,
         skos:Concept ;
@@ -6002,14 +6014,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/7170> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Sensorik und Messtechnik"@de,
-        "Sensors And Measurement Technology"@en ;
+        "Sensor And Measurement Technology"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/710> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
         <https://onto.tib.eu/destf/cs/710> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "7170"^^xsd:string ;
     skos:prefLabel "Sensorik und Messtechnik"@de,
-        "Sensors And Measurement Technology"@en .
+        "Sensor And Measurement Technology"@en .
 
 <https://onto.tib.eu/destf/cs/7190> a owl:NamedIndividual,
         skos:Concept ;
@@ -6260,14 +6272,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/7420> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Stadtplanung (Ortsplanung)"@de,
-        "Urban Planning (Town Planning)"@en ;
+        "Urban Planning (Local Planning)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/740> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
         <https://onto.tib.eu/destf/cs/740> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "7420"^^xsd:string ;
     skos:prefLabel "Stadtplanung (Ortsplanung)"@de,
-        "Urban Planning (Town Planning)"@en .
+        "Urban Planning (Local Planning)"@en .
 
 <https://onto.tib.eu/destf/cs/7430> a owl:NamedIndividual,
         skos:Concept ;
@@ -6358,14 +6370,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/7530> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Verkehrsbau, -wesen"@de,
-        "Transport Engineering, Transport"@en ;
+        "Transport Engineering, Transport systems"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/750> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08>,
         <https://onto.tib.eu/destf/cs/750> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "7530"^^xsd:string ;
     skos:prefLabel "Verkehrsbau, -wesen"@de,
-        "Transport Engineering, Transport"@en .
+        "Transport Engineering, Transport systems"@en .
 
 <https://onto.tib.eu/destf/cs/7540> a owl:NamedIndividual,
         skos:Concept ;
@@ -6556,14 +6568,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/7930> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Plastik, Bildhauerei"@de,
-        "Sculpture"@en ;
+        "Sculpture, Sculpting"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/790> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/09>,
         <https://onto.tib.eu/destf/cs/790> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "7930"^^xsd:string ;
     skos:prefLabel "Plastik, Bildhauerei"@de,
-        "Sculpture"@en .
+        "Sculpture, Sculpting"@en .
 
 <https://onto.tib.eu/destf/cs/7940> a owl:NamedIndividual,
         skos:Concept ;
@@ -6983,14 +6995,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/8365> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Sonstige Musikpraxis"@de,
-        "Other Music Practice"@en ;
+        "Other Musical Practice"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/830> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/09>,
         <https://onto.tib.eu/destf/cs/830> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "8365"^^xsd:string ;
     skos:prefLabel "Sonstige Musikpraxis"@de,
-        "Other Music Practice"@en .
+        "Other Musical Practice"@en .
 
 <https://onto.tib.eu/destf/cs/8600> a owl:NamedIndividual,
         skos:Concept ;
@@ -7045,14 +7057,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/8730> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Hochschulkommission"@de,
-        "Higher Education Commission"@en ;
+        "Higher Learning Commission"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/870> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/15>,
         <https://onto.tib.eu/destf/cs/870> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "8730"^^xsd:string ;
     skos:prefLabel "Hochschulkommission"@de,
-        "Higher Education Commission"@en .
+        "Higher Learning Commission"@en .
 
 <https://onto.tib.eu/destf/cs/8800> a owl:NamedIndividual,
         skos:Concept ;
@@ -7447,15 +7459,14 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/9350> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Fahrbereitschaft"@de,
-        "Chauffeur-driven Carpool"@en,
-        "Readiness To Drive"@en ;
+        "Car Pool Service"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/930> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/15>,
         <https://onto.tib.eu/destf/cs/930> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
     skos:notation "9350"^^xsd:string ;
     skos:prefLabel "Fahrbereitschaft"@de,
-        "Readiness To Drive"@en .
+        "Car Pool Service"@en .
 
 <https://onto.tib.eu/destf/cs/9360> a owl:NamedIndividual,
         skos:Concept ;
@@ -7953,7 +7964,7 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/675> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Engineering Focus)"@en ;
+        "Buiness Engineering (Engineering Focus)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/08> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/08> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
@@ -7961,7 +7972,7 @@ skos:ConceptScheme a owl:Class .
     skos:narrowerTransitive <https://onto.tib.eu/destf/cs/6755> ;
     skos:notation "675"^^xsd:string ;
     skos:prefLabel "Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Engineering Focus)"@en .
+        "Business Engineering (Engineering Focus)"@en .
 
 <https://onto.tib.eu/destf/cs/890> a owl:NamedIndividual,
         skos:Concept ;
@@ -8005,7 +8016,7 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/310> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftsingenieurwesen mit wirtschaftswissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Economics Focus)"@en ;
+        "Business Engineering (Economics Focus)"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/03> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
@@ -8015,7 +8026,7 @@ skos:ConceptScheme a owl:Class .
         <https://onto.tib.eu/destf/cs/3110> ;
     skos:notation "310"^^xsd:string ;
     skos:prefLabel "Wirtschaftsingenieurwesen mit wirtschaftswissenschaftlichem Schwerpunkt"@de,
-        "Industrial Engineering (Economics Focus)"@en .
+        "Business Engineering (Economics Focus)"@en .
 
 <https://onto.tib.eu/destf/cs/770> a owl:NamedIndividual,
         skos:Concept ;
@@ -9828,7 +9839,7 @@ skos:ConceptScheme a owl:Class .
 <https://onto.tib.eu/destf/cs/290> a owl:NamedIndividual,
         skos:Concept ;
     rdfs:label "Wirtschaftswissenschaften"@de,
-        "Economics And Business"@en ;
+        "Economic sciences"@en ;
     skos:broader <https://onto.tib.eu/destf/cs/03> ;
     skos:broaderTransitive <https://onto.tib.eu/destf/cs/03> ;
     skos:inScheme <https://onto.tib.eu/destf/cs/> ;
@@ -9870,7 +9881,7 @@ skos:ConceptScheme a owl:Class .
         <https://onto.tib.eu/destf/cs/3010> ;
     skos:notation "290"^^xsd:string ;
     skos:prefLabel "Wirtschaftswissenschaften"@de,
-        "Economics And Business"@en .
+        "Economic sciences"@en .
 
 <https://onto.tib.eu/destf/cs/250> a owl:NamedIndividual,
         skos:Concept ;
@@ -11039,4 +11050,3 @@ skos:Concept a owl:Class .
         "Personnel At Universities - Subject Classification"@en .
 
 [] a owl:Ontology .
-
