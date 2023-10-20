@@ -55,9 +55,9 @@ class RDFTranslator:
             self.g.remove((subj, SKOS.prefLabel, obj))
             self.g.remove((subj, RDFS.label, obj))
             self.g.add((subj, SKOS.prefLabel, names[subj][language]))
-            self.g.add((subj, RDFS.label, names[subj][language]))
+            #self.g.add((subj, RDFS.label, names[subj][language]))
 
-            self.g.add((subj, RDFS.label, names[subj][obj.language]))
+            #self.g.add((subj, RDFS.label, names[subj][obj.language]))
             self.g.add((subj, SKOS.prefLabel, names[subj][obj.language]))
             print(" SETTING " + names[subj][obj.language] + " IN LANGUAGE " + obj.language + " FOR ")
             print(subj)
