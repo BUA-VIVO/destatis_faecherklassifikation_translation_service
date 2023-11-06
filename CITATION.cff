@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: DESTATIS Fächerklassifikation Translation Service
+message: >-
+  If you use this software, please cite it using these
+  metadata.
+type: dataset
+authors:
+  - given-names: Rolf
+    family-names: Guescini
+    affiliation: Humboldt-Universität zu Berlin
+    orcid: 'https://orcid.org/0000-0003-4325-5751'
+repository-code: >-
+  https://github.com/BUA-VIVO/destatis_faecherklassifikation_translation_service
+abstract: >-
+  This project provides an automatic translation service for SKOS/RDF Vocabulary ontologies. It performs automatic translation of skos:prefLabel and skos:note literals and adds translated rdfs:label literals to the ontology.
+keywords:
+  - DESTATIS Fächerklassifikation
+  - Translation
+  - Ontology
+license: CC0-1.0
+version: '2.2'
+commit: https://github.com/BUA-VIVO/destatis_faecherklassifikation_translation_service/tree/v2.2
+date-released: '2023-11-06'
