@@ -18,6 +18,9 @@ keywords:
   - Translation
   - Ontology
 license: CC0-1.0
+identifiers:
+  - type: DOI
+    value: 10.5281/zenodo.10401074
 version: '2.2'
 commit: https://github.com/BUA-VIVO/destatis_faecherklassifikation_translation_service/tree/2.2
 date-released: '2023-11-06'
