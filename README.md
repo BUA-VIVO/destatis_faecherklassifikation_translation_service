@@ -11,3 +11,6 @@ Der Dienst verwendet eine automatisierte Übersetzung, wobei die Google Translat
 This project provides an automatic translation service for SKOS/RDF Vocabulary ontologies. It performs automatic translation of skos:prefLabel and skos:note literals and adds translated rdfs:label literals to the ontology.
 
 The service uses automated translation, using the Google Translate API as a starting point for translating the literals. The literals are then further manually edited and updated to provide an English translation of the Destatis subject classification "Personnel at Universities - Subject Classification". The Destatis subject classification "Personal at universities - subject classification" was originally converted into SKOS by Tatiana Walther with the participation of Christian Hauschke (Technical Information Library (TIB) Hanover). The designations and contents of the subject system are unchanged
+
+## Publication
+[![DOI](https://zenodo.org/badge/517947719.svg)](https://zenodo.org/doi/10.5281/zenodo.10401073)
